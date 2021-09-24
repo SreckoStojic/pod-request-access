@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #121725;
+   overflow: hidden;
+}
+
+.css-main {
+    position: relative;
+    display: flex;
+}
+.css-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.css-background .css-logo {
+    position: relative;
+    top: -76%;
+    left: 15%;
+}
+
+
+.css-background .css-artist {
+    position: relative;
+    width: 888px;
+    height: 640px;
+    top: 7%;
+    left: 33%;
+}
+
+.css-background .css-dots {
+    position: absolute;
+    width: 232px;
+    height: 104px;
+    top: 89%;
+    left: 85%;
+}
+
+.css-content {
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 1;
+    width: 723px;
+    height: 509px;
+    background-color: #121725;
+}
+
+.css-form {
+    display:flex;
+    flex-direction:row;
+    border:1px solid grey;
+    border-radius: 25px;
+    width: 427px;
+    height: 56px;
+    padding:2px;
+    background-color: #2C344B;
+  }
+  
+.css-form input {
+    flex-grow:2;
+    border-radius: 25px;
+    padding-left: 20px;
+    background-color: #2C344B;
+    border: none;
+  }
+  
+.css-form input:focus {
+    outline: none;
+  }
+  
+.css-form button {
+    width: 162px;
+    height: 46px;
+    background:#54E6AF;
+    border: none;
+    border-radius: 25px;
+    color:black;
+    margin-top: 2px;
+    margin-right: 2px;
+  }
+
+  .css-podcasts {
+      display: flex;
+      gap: 30px;
+  }
+
+  .css-podcasts {
+      width: 129px;
+      height: 26px;
+}
