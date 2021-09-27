@@ -44,7 +44,7 @@ body {
     position: absolute;
     top: 25%;
     left: 17%;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -66,11 +66,14 @@ body {
   }
   
 .css-form input {
+    font-family: "Chivo";
     flex-grow:2;
     border-radius: 25px;
     padding-left: 20px;
     background-color: #2C344B;
     border: none;
+    font-size: 14px;
+    line-height: 28px;
   }
   
 .css-form input:focus {
@@ -78,22 +81,157 @@ body {
   }
   
 .css-form button {
+    font-family: "Chivo";
     width: 162px;
     height: 46px;
     background:#54E6AF;
     border: none;
     border-radius: 25px;
-    color:black;
+    color: #121725;
     margin-top: 2px;
     margin-right: 2px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: normal;
+    cursor: pointer;
   }
 
-  .css-podcasts {
+.css-podcasts {
       display: flex;
       gap: 30px;
-  }
-
-  .css-podcasts {
       width: 129px;
       height: 26px;
+}
+
+.css-title {
+    font-family: "Chivo";
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 400;
+    color: white;
+}
+
+.css-title span {
+    color: #54E6AF;
+}
+
+.css-body {
+    font-family: "Chivo";
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #C2CBE5;
+}
+
+.css-error-message {
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.28px;
+    color: #FB3E3E;
+    padding-left: 20px;
+}
+
+.css-error-message-visible {
+    visibility: visible;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .css-background {
+        background-image: url(assets/mobile/image-host.jpg);
+        opacity: 0.2;
+    }
+    .css-background .css-logo {
+        top: 6%;
+        left: 28%;
+        opacity: none;
+    }
+
+    .css-background .css-dots {
+        display: none;
+    }
+
+    .css-background .css-artist {
+        display: none;
+    }
+
+    .css-content {
+        width: 327px;
+        height: 398px;
+        top: 21%;
+        left: 5%;
+        justify-content: space-between;
+    }
+
+    .css-title {
+        font-family: "Chivo";
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .css-body {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .css-form {
+        width: 327px;
+        height: 108px;
+        background-color: #121725;
+        flex-direction: column;
+        border: none;
+        gap: 10px;
+        order: 2;
+    }
+
+    .css-form input {
+        width: 327px;
+        height: 46px;
+        flex-grow: 0;
+    }
+
+    .css-form button {
+        width: 327px;
+        height: 46px;
+    }
+
+    .css-podcasts {
+        display: flex;
+        gap: 30px;
+        width: 315px;
+        height: 17px;
+        order: 1;
+        margin-bottom: 40px;
+    }
+    
+    .css-podcasts img {
+        width: 56px;
+        height: 17px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1200px) {
+    .css-background .css-artist {
+        top: -1%;
+        left: 20%;
+        width: 491px;
+        height: 767px;
+        content: url(assets/tablet/image-host.jpg);
+    }
+    
+    .css-background .css-dots {
+        top: 89%;
+        left: 5%;
+    }
+    .css-content {
+        position: absolute;
+        top: 22%;
+        left: 7%;
+        width: 635px;
+        height: 509px;
+    }
 }
