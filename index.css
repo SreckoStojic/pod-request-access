@@ -63,6 +63,7 @@ body {
     height: 56px;
     padding:2px;
     background-color: #2C344B;
+    order: 1;
   }
   
 .css-form input {
@@ -74,6 +75,7 @@ body {
     border: none;
     font-size: 14px;
     line-height: 28px;
+    color: white;
   }
   
 .css-form input:focus {
@@ -101,6 +103,7 @@ body {
       gap: 30px;
       width: 129px;
       height: 26px;
+      order: 3;
 }
 
 .css-title {
@@ -130,6 +133,7 @@ body {
     line-height: 14.28px;
     color: #FB3E3E;
     padding-left: 20px;
+    order: 2;
 }
 
 .css-error-message-visible {
@@ -211,6 +215,10 @@ body {
     .css-podcasts img {
         width: 56px;
         height: 17px;
+    }
+    
+    .css-error-message {
+        order: 3;
     }
 }
 

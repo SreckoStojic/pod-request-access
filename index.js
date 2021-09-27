@@ -4,14 +4,25 @@ function validateEmail(email) {
 }
 
 const form = document.querySelector(".js-form");
+const errorEmpty = "Oops! Please add your email";
+const errorNotFormatted = "Oops! Please check your email";
 
 form.addEventListener("submit", function(e){
     e.preventDefault();
-    console.log(e);
-    const error = document.querySelector(".js-error-message");
-    if(!validateEmail(e.target.elements.email.value)){
-        error.classList.add("css-error-message-visible");
+    const errorDiv = document.querySelector(".js-error-message");
+    console.log(e.target.elements.email.value);
+    if(e.target.elements.email.value === "") {
+        errorDiv.innerHTML = errorEmpty;
+        errorDiv.classList.add("css-error-message-visible");
+        return;
+    } 
+    
+    if(validateEmail(e.target.elements.email.value)) {
+        errorDiv.classList.remove("css-error-message-visible");
+    
     } else {
-        error.classList.remove("css-error-message-visible");
+        errorDiv.innerHTML = errorNotFormatted;
+        errorDiv.classList.add("css-error-message-visible");
     }
+    
 });
